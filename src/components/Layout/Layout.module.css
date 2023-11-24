@@ -1,0 +1,36 @@
+.layout {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.futureForecasts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.errorAlert {
+    position: absolute;
+    background-color: rgba(175, 1, 1);
+    color: white;
+    top: -100px;
+    left: 50%;
+    padding: 15px 30px;
+    border-radius: 20px;
+    transform: translate(-50%);
+    transition: top 1s ease;
+}
+
+.errorAlert.active {
+    top: 35px;
+}
+
+@media (max-width:1050px) {
+    .futureForecasts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

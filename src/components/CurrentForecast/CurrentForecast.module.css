@@ -1,0 +1,82 @@
+.currentForecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    row-gap: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.townName {
+    font-size: 2.2rem;
+}
+
+.temperature {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.weatherState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4px;
+}
+
+.weatherState .icon {
+    width: 120px;
+    height: 120px;
+}
+
+.weatherState .state {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.datetime {
+    font-size: 1rem;
+}
+
+.moreInformation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.row {
+    display: flex;
+    column-gap: 30px;
+}
+
+@media (max-width: 560px) {
+    .townName {
+        font-size: 2rem;
+    }
+
+    .temperature {
+        font-size: 1.6rem;
+    }
+
+    .weatherState .icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .weatherState .state {
+        font-size: 1.6rem;
+    }
+
+    .datetime {
+        font-size: 0.8rem;
+    }
+
+    .moreInformation {
+        font-size: 0.8rem;
+    }
+
+    .row {
+        column-gap: 20px;
+    }
+}
